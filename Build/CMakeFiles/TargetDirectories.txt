@@ -1,0 +1,5 @@
+/home/el3os/semester/CGGD/Computer_graphics_labs/Build/CMakeFiles/Rasterization.dir
+/home/el3os/semester/CGGD/Computer_graphics_labs/Build/CMakeFiles/Raytracing.dir
+/home/el3os/semester/CGGD/Computer_graphics_labs/Build/CMakeFiles/DirectX12.dir
+/home/el3os/semester/CGGD/Computer_graphics_labs/Build/CMakeFiles/edit_cache.dir
+/home/el3os/semester/CGGD/Computer_graphics_labs/Build/CMakeFiles/rebuild_cache.dir
