@@ -49,8 +49,8 @@ void cg::renderer::ray_tracing_renderer::render()
 	std::mt19937 random_generator(random_device());
 	std::uniform_real_distribution<float> uni_dist(-1.f, 1.f);
 	raytracer->closest_hit_shader = [&](const ray& ray, payload& payload,
-										const triangle<cg::vertex>& triangle,
-										size_t depth){
+									   const triangle<cg::vertex>& triangle,
+									   size_t depth){
 
 		float3 position = ray.position + ray.direction * payload.t;
 		float3 normal = payload.bary.x * triangle.na + payload.bary.y * triangle.nb + payload.bary.z * triangle.nc;
@@ -86,6 +86,4 @@ void cg::renderer::ray_tracing_renderer::render()
 	std::cout<<"Ray tracing took "<< rt_duration.count()<<"ms\n";
 
 	cg::utils::save_resource(*render_target, settings->result_path);
-
-
 }

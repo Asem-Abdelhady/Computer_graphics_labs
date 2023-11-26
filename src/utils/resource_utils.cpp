@@ -7,7 +7,6 @@
 
 #include <stb_image_write.h>
 
-
 std::string view_command(const std::filesystem::path& path)
 {
 #ifdef __APPLE__
@@ -35,4 +34,3 @@ void cg::utils::save_resource(cg::resource<cg::unsigned_color>& render_target, c
 	if (!command.empty())
 		std::system(command.c_str());
 }
-
